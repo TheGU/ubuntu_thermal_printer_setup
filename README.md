@@ -13,24 +13,24 @@ So, after research and some hacking, it's finally work on my Ubuntu Server.
 ```
 git clone https://github.com/TheGU/ubuntu_thermal_printer_setup.git
 ```
-2. Open `terminal` then, as root, copy `rastertotspl` to `/usr/lib/cups/filter/rastertotspl` and change permission 
+2. Open `terminal` then, as root, copy `rastertotspl` to `/usr/lib/cups/filter/rastertotspl` and change permission  
 ```
 cd ubuntu_thermal_printer_setup
 sudo cp rastertotspl /usr/lib/cups/filter/
 sudo chmod 755 /usr/lib/cups/filter/rastertotspl
 ```
-3. Open `Setting > Bluetooth` then connect to your printer  
+3. Open `Setting > Bluetooth` then connect to your printer   
 ![Connect to bluetooth printer](image/01_bluetooth_connect.png)
-4. Click on connected bluetooth printer to view mac address (in address section) and take note.  
+4. Click on connected bluetooth printer to view mac address (in address section) and take note.   
 ![See bluetooth mac address](image/02_bluetooth_mac.png)
-5. Open `Setting > Printer > Add`   
+5. Open `Setting > Printer > Add`    
 ![Add printer](image/03_printer_add.png)
-6. Select `Enter URL`. In `Enter device URI` type `bluetooth://<MAC Address with out colon>/` for example `bluetooth://6622BE43XXXX/` (mac address from step 4. without colon ':') 
+6. Select `Enter URL`. In `Enter device URI` type `bluetooth://<MAC Address with out colon>/` for example `bluetooth://6622BE43XXXX/` (mac address from step 4. without colon ':')  
 ![Add printer](image/04_printer_add_uri.png)
-then click `Forward` ,choose printer name then Apply
-7. Open printer properties to setup paper feed
+then click `Forward` ,choose printer name then Apply  
+7. Open printer properties to setup paper feed  
 ![Print properties](image/06_printer_setting.png)
-8. On `Printer Options` setup `Page size` and tune `darkneess , feed offset , gap height` to match your printer feed speed and papersize.
+8. On `Printer Options` setup `Page size` and tune `darkneess , feed offset , gap height` to match your printer feed speed and papersize.  
 ![Print tuning](image/07_printer_setting.png)
 
 ---
