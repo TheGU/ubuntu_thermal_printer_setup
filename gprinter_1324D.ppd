@@ -57,7 +57,7 @@
 
 *OpenUI *PageSize/Page Size: PickOne
 *OrderDependency: 10 AnySetup *PageSize
-*DefaultPageSize: w100mmh180mm
+*DefaultPageSize: w100mmh150mm
 *PageSize w30mmh20mm/30mm x 20mm: "<</PageSize[85 57]/ImagingBBox null>>setpagedevice"
 *PageSize w40mmh60mm/40mm x 60mm: "<</PageSize[113 170]/ImagingBBox null>>setpagedevice"
 *PageSize w40mmh70mm/40mm x 70mm: "<</PageSize[113 198]/ImagingBBox null>>setpagedevice"
@@ -71,7 +71,7 @@
 
 *OpenUI *PageRegion/Page Size: PickOne
 *OrderDependency: 10 AnySetup *PageRegion
-*DefaultPageRegion: w100mmh180mm
+*DefaultPageRegion: w100mmh150mm
 *PageRegion w30mmh20mm/30mm x 20mm: "<</PageSize[85 57]/ImagingBBox null>>setpagedevice"
 *PageRegion w40mmh60mm/40mm x 60mm: "<</PageSize[113 170]/ImagingBBox null>>setpagedevice"
 *PageRegion w40mmh70mm/40mm x 70mm: "<</PageSize[113 198]/ImagingBBox null>>setpagedevice"
@@ -125,7 +125,7 @@
 
 *OpenUI *Darkness/Darkness: PickOne
 *OrderDependency: 120 AnySetup *Darkness
-*DefaultDarkness: 7
+*DefaultDarkness: 14
 *Darkness 0: "%%"
 *Darkness 1: "%%"
 *Darkness 2: "%%"
@@ -167,7 +167,7 @@
 
 *OpenUI *AdjustVertical/Vertical Offset:PickOne
 *OrderDependency: 130 AnySetup *AdjustVertical
-*DefaultAdjustVertical: 0
+*DefaultAdjustVertical: 5.67
 *AdjustVertical 0/0mm: "%%"
 *AdjustVertical 2.83/1mm: "%%"
 *AdjustVertical 5.67/2mm: "%%"
@@ -192,7 +192,7 @@
 
 *OpenUI *MediaMethod/Method: PickOne
 *OrderDependency: 110 AnySetup *MediaMethod
-*DefaultMediaMethod: Transfer
+*DefaultMediaMethod: Normal
 *MediaMethod Normal/Use Currently Printer Setting: "%%"
 *MediaMethod Direct/Direct Thermal: "%%"
 *MediaMethod Transfer/Thermal Transfer: "%%"
@@ -208,7 +208,7 @@
 
 *OpenUI *MarkHeight/Gaps Height: PickOne
 *OrderDependency: 150 AnySetup *MarkHeight
-*DefaultMarkHeight: 0
+*DefaultMarkHeight: 5.67
 *MarkHeight 0/0mm: "%%"
 *MarkHeight 2.83/1mm: "%%"
 *MarkHeight 5.67/2mm: "%%"
@@ -344,7 +344,7 @@
 
 *OpenUI *Occurrence/Occurrence: PickOne
 *OrderDependency: 140 AnySetup *Occurrence
-*DefaultOccurrence: Job
+*DefaultOccurrence: Specified
 *Occurrence Every/After Every Page: "%%"
 *Occurrence Copies/After Identical Copies: "%%"
 *Occurrence Job/After Job: "%%"
