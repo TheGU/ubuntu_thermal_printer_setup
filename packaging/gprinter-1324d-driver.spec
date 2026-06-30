@@ -20,6 +20,9 @@ BuildArch:      x86_64
 AutoReqProv:    no
 Requires:       cups
 Requires:       bluez-cups
+# libcrypt.so.1 is the prebuilt binary's only unmet hard dep on Fedora (verified
+# with ldd on fedora:43). libcups/libgs are dlopen'd, not hard deps.
+Requires:       libxcrypt-compat
 
 Source0:        rastertotspl
 Source1:        gprinter_1324D.ppd
@@ -49,5 +52,8 @@ install -D -m 0644 %{SOURCE1} %{buildroot}%{_datadir}/cups/model/gprinter-1324d.
 %{_datadir}/cups/model/gprinter-1324d.ppd
 
 %changelog
+* Tue Jun 30 2026 TheGU <pattapongj@gmail.com> - 1.1.1-1
+- Require libxcrypt-compat (provides libcrypt.so.1 the filter needs on Fedora).
+
 * Tue Jun 30 2026 TheGU <pattapongj@gmail.com> - 1.1.0-1
 - Initial RPM packaging of the prebuilt rastertotspl filter and GP-1324D PPD.
